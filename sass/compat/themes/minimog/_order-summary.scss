@@ -1,0 +1,18 @@
+@use "sass:math" as math;
+
+// ------------------------------------
+// ORDER SUMMARY
+// ------------------------------------
+
+@media (#{$bp-smaller-than-tablet}) {
+	body#{ $_body-theme-selector } div.woocommerce .fc-wrapper #order_review table.woocommerce-checkout-review-order-table {
+		margin: 0;
+		width: 100%;
+	}
+}
+
+
+
+body#{ $_body-theme-selector } div.woocommerce .form-row.woocommerce-invalid .woocommerce-error {
+	margin-bottom: 0 !important // Needed to override theme value.
+}
